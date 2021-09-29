@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Solicitar valor e fazer sua tabuada</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 400px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+        <table>
+
+            <script language="javascript">
+
+                window.alert("Vamos solicitar um numero positivo e fazer a tabuada de um a dez desse numero,ok?")
+                var mult, cont;
+                mult = parseInt(window.prompt("Informe um numero positivo: "));
+                document.write(" <h1>TABUADA D0 " + mult + " <h1>");
+                for (cont = 1; cont <= 10; ++cont) {
+                    document.write("<tr><td>" + mult + " x " + cont + " = " + mult * cont + "</td></tr>");
+                }
+            </script>
+        </table>
+    </center>
+
+</body>
+
+</html>

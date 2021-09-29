@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encontrar o maior valor</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <script language="javascript">
+
+                        window.alert("Nessa pagina vamos  mostrar o maior valor entre dois valores diferentes, ok?");
+
+                        var num1, num2, maior;
+                        num1 = parseFloat(window.prompt("Informe o primeiro valor : "));
+                        num2 = parseFloat(window.prompt("Informe outro valor : "));
+
+                        maior = Math.max(num1, num2);
+
+                        document.write("<h1> O maior entre " + num1 + " e " + num2 + " é <font color='green'> "
+                            + maior + "</font></h1>");
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

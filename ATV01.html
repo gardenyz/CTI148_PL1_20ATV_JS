@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Area do Retangulo</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <script language="javascript">
+
+                        window.alert("Nesse programa vamos calcular e exibir a area  de um retangulo,ok?");
+
+                        var base, altura, area;
+
+                        base = parseFloat(window.prompt("Informe a base do retangulo: "));
+                        altura = parseFloat(window.prompt("Informe a altura do retangulo: "));
+
+                        area = base * altura;
+
+                        document.write("<h1> A area do Retangulo é " + area + "</h1>");
+                        document.write("<h2>Base do retangulo: " + base + "</h2>");
+                        document.write("<h2>Altura do retangulo: " + altura + "</h2>");
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

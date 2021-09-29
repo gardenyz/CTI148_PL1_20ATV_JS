@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Verificar se forma triangulo reangulo</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <script language="javascript">
+                        window.alert("Verificar se três valores que serão digitados formam " +
+                            "ou não um triângulo retângulo,ok?");
+                        var lad1, lad2, lad3, hipot, cat1, cat2;
+
+                        lad1 = parseFloat(window.prompt("Informe o 1° lado : "));
+                        lad2 = parseFloat(window.prompt("Informe o 2° lado : "));
+                        lad3 = parseFloat(window.prompt("Informe o 3° lado : "));
+
+                        if (lad1 > lad2 && lad1 > lad3) {
+
+                            hipot = lad1;
+                            cat1 = lad2;
+                            cat2 = lad3;
+
+                        }
+
+                        else if (lad2 > lad1 && lad2 > lad3) {
+                            hipot = lad2;
+                            cat1 = lad1;
+                            cat2 = lad3;
+                        }
+
+                        else {
+                            hipot = lad3;
+                            cat1 = lad1;
+                            cat2 = lad2;
+                        }
+
+
+                        //Verificar se a soma dos quadrados dos catetos é igual ao quadrado da hipot
+
+                        if (cat1 * cat1 + cat2 * cat2 == hipot * hipot)
+
+                           document.write("<h2>É um  triangulo retangulo</h2>");
+
+                        else {
+                           document.write("<h2>O triangulo não é retangulo.</h2.");
+                        }
+        
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>

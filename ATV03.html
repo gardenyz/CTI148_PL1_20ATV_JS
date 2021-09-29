@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title> Area do Quadrado pela diagonal </title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <script language="javascript">
+                        window.alert("Nesse programa vamos calcular e" +
+                            "exibir a area de um quadrado pelo valor da sua diagonal, ok?");
+
+                        var diagonal, area;
+
+                        diagonal = parseFloat(window.prompt("Informe o valor da dioganal do quadrado: "));
+
+                        area = (Math.pow(diagonal, 2)) / 2;
+
+
+                        document.write("<h1> A Area do Quadrado é " + area + "</h1>");
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>

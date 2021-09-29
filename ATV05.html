@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Média aritmética de 4 valores </title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+
+                    <script language="javascript">
+
+                        window.alert("Nesse programa vamos calcular e exibir a média aritmética " +
+                            "de quatro valores quaisquer que você ira informa, ok?");
+
+                        var num1, num2, num3, num4, media;
+
+                        num1 = parseFloat(window.prompt("Informe o primeiro valor : "));
+                        num2 = parseFloat(window.prompt("Informe o segundo valor : "));
+                        num3 = parseFloat(window.prompt("Informe o terceiro valor : "));
+                        num4 = parseFloat(window.prompt("Informe o quarto valor : "));
+
+                        media = (num1 + num2 + num3 + num4) / 4;
+
+                        document.write("<h1> A media aritmética desses valores é  <font color='red'>"
+                            + media + "</h1></font>");
+
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

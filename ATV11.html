@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calcula a média do bimestre</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+        }
+
+        table {
+            text-align: center;
+            width: 600px;
+            height: 200px;
+        }
+        td {
+            border-style: dotted;
+            border-width: thick;
+            border-color: red;
+            border-radius: 5pt;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+
+        <script language="javascript">
+            window.alert("Nessa pagina vamos calcular a media do semestre por duas avaliaçoes, ok?");
+
+            var ava1, ava2, media;
+
+            ava1 = parseFloat(window.prompt("Informe o quanto tirou na Avaliaçao 1 : "));
+            ava2 = parseFloat(window.prompt("Informe o quanto tirou na Avaliaçao 2 : "));
+
+            media = (ava1 + (2 * ava2)) / 3;
+           
+            document.write("<h1>Sua media desse semestre de acordo com suas avaliaçoes é <font color ='red'>" + media + "</font></h1>");
+            document.write("<table><tr><td> Avaliaçoes </td><td>Nota</td></tr>");
+            document.write("<tr><td> Avaliaçao 1 </td><td>" + ava1 + "</td></tr>");
+            document.write("<tr><td> Avaliaçao 2 </td><td>" + ava2 + "</td></tr>");
+            document.write("<tr><td> Media  </td><td>" + media + "</td></tr></table>");
+        </script>
+
+    </center>
+
+</body>
+
+</html>

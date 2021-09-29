@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Verificar e Classificar Triangulo</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            font-family: "Arial";
+            color: white;
+            
+        }
+
+        table {
+            width: 900px;
+            height: 100px;
+            border-style: solid;
+            border-color: cyan;
+            border-radius: 5pt;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        h1 {
+            color: cyan;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <script language="javascript">
+                        window.alert("Vamos ver se o numeros que voce digitar forma um triangulo ou nao ," +
+                            " se formar vamos clasificar em Isósceles, escaleno ou equilátero,ok?");
+                        var lad1, lad2, lad3
+
+                        lad1 = parseFloat(window.prompt("Informe o 1° lado : "));
+                        lad2 = parseFloat(window.prompt("Informe o 2° lado : "));
+                        lad3 = parseFloat(window.prompt("Informe o 3° lado : "));
+
+                        if (
+                            lad2 + lad3 > lad1 &
+                            lad1 + lad3 > lad2 &
+                            lad1 + lad2 > lad3
+                        ) {
+                            document.write("<h1>Essa medidas podem formar um triângulo</h1>");
+                            {
+
+                                if (lad1 == lad2 & lad2 == lad3)
+                                    document.write("<h2> O triângulo é equilátero.</h2>");
+                                else if (lad1 == lad2 | lad2 == lad3 | lad1 == lad3)
+                                    document.write("<h2> O triângulo é isósceles.</h2>");
+                                else
+                                    document.write("<h2>O triângulo é escaleno.</h2>");
+                            }
+                        }
+                        else {
+                            document.write("<h1>Essa medidas não formam um triângulo</h1>");
+                        }
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+</body>
+
+</html>
